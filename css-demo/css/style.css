@@ -1,0 +1,10 @@
+/* css syntax */
+body {
+  background-color: beige;
+}
+
+p {
+  font-size: 30px;
+  color: blueviolet;
+  font-family: 'Courier New', Courier, monospace;
+}
