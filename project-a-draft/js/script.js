@@ -1,4 +1,4 @@
-//needed to determine whether the number is prime
+
 let n = 0;
 let N; //number of lines coming from the center of the canvas
 let stepSize = 5; //distance between lines (between each rotation)
@@ -22,6 +22,7 @@ let setsOfParticles = [];
 let rFreq, gFreq, bFreq;
 
 function setup() {
+
     let canvas = createCanvas(800, 500);
     canvas.parent("p5-canvas-container");
     background(0);
@@ -46,8 +47,6 @@ function setup() {
 
     noStroke();
     fill(255);
-    textSize(16);
-    text("N = " + N, 10, 20);
 }
 
 function draw() {
@@ -93,6 +92,32 @@ function draw() {
     }
     pop();
     n++;
+}
+
+function keyPressed() {
+    if (key === "0") {
+        background(0);
+        // set the origin with the circle's x and y position
+        originX = width / 2;
+        originY = height / 2;
+
+        // reset
+        x = 0;
+        y = 0;
+        px = x;
+        py = y;
+        stepSize = random(5, 10);
+
+        N = floor(random(3, 7));
+        n = 0;
+
+        angle = 0;
+        rotationSpeed = random(-0.3, 0.3);
+
+        rFreq = random(2.0, 4.0);
+        gFreq = random(2.0, 4.0);
+        bFreq = random(2.0, 4.0);
+    }
 }
 
 function isPrime(value) {
