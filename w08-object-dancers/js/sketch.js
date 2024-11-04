@@ -60,7 +60,7 @@ class MarlenaDancer {
     pop();
     push()
     translate(this.originX, this.originY)
-    this.drawReferenceShapes();
+    //this.drawReferenceShapes();
     pop()
   }
 
@@ -75,8 +75,20 @@ class MarlenaDancer {
     noFill();
     stroke(0);
     strokeWeight(4);
-    let mouthStart = this.counter < 10 ? 0 : PI;
-    let mouthEnd = this.counter < 10 ? PI : TWO_PI;
+    let mouthStart = 0
+    if (this.counter < 10) {
+      mouthStart = 0
+    }    
+    if (this.counter >= 10) {
+      mouthStart = PI
+    }
+    let mouthEnd = 0
+    if (this.counter < 10) {
+      mouthEnd = PI
+    }    
+    if (this.counter >= 10) {
+      mouthEnd = TWO_PI
+    }
     if (this.counter == 20) {
       this.counter = 0
     }
