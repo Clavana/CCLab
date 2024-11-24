@@ -1,0 +1,57 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+canvas {
+  display: block;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: coral;
+  text-decoration: overline;
+}
+
+.main-container {
+  /* background-color: darkcyan; */
+
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-title-container {
+  /* background-color: cornflowerblue; */
+  width: 500px;
+  /* height: 150px; */
+  text-align: center;
+}
+
+.main-title-box {
+  /* background-color: aquamarine; */
+  font-size: 30px;
+  /* padding: 20px 0; */
+  /* line-height: 20px; */
+  padding: 20px 0;
+}
+
+.main-link-box {
+  /* background-color: brown; */
+  padding: 10px 0;
+}

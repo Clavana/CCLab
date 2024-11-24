@@ -1,15 +1,20 @@
+let NUM_OF_PARTICLES = 3
 let particles = [];
 
 function setup() {
   let canvas = createCanvas(500, 400);
   canvas.parent("p5-canvas-container");
   background(255);
+
+  for (let i = 0; i < NUM_OF_PARTICLES; i++) {
+    particles[i] = new Particle(random(width), random(height));
+  }
 }
 
 function draw() {
   background(0);
   
-  // Loop through each set of particles
+
   for (let i = 0; i < particles.length; i++) {
     let particles = setsOfParticles[i];
     for (let j = setsOfParticles.length - 1; j >= 0; j--) {
