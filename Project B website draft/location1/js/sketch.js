@@ -1,13 +1,9 @@
 let img;
-let nyu;
-let disney;
-let pearl;
-let chocolate;
+let yugarden;
 let sizeW, sizeH;
-let chocolate_image;
 
 function preload() {
-  img = loadImage('assets/mapLarge.png');
+  img = loadImage('assets/yuGarden.jpg');
 }
 
 function setup() {
@@ -19,22 +15,13 @@ function setup() {
   background(0, 0, 0);
   image(img, 0, 0, sizeW, sizeH);
 
-  nyu = new circleButton(sizeW*0.44, sizeH*0.63)
-  disney = new circleButton(sizeW*0.9, sizeH*0.66)
-  pearl = new circleButton(sizeW*0.49, sizeH*0.12)
-  chocolate = new circleButton(sizeW*0.465, sizeH*0.19)
+  //yugarden = new circleButton(sizeW*0.465, sizeH*0.19)
 }
 
 function draw() {
 
-  nyu.display()
-  nyu.checkHoover(mouseX, mouseY)
-  disney.display()
-  disney.checkHoover(mouseX, mouseY)
-  pearl.display()
-  pearl.checkHoover(mouseX, mouseY)
-  chocolate.display()
-  chocolate.checkHoover(mouseX, mouseY)
+  //yugarden.display()
+  //yugarden.checkHoover(mouseX, mouseY)
 }
 
 class circleButton {
