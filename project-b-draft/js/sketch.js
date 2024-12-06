@@ -7,7 +7,7 @@ let sizeW, sizeH;
 let chocolate_image;
 
 function preload() {
-  img = loadImage('assets/mapLarge.png');
+  img = loadImage('../assets/mapLarge.png');
 }
 
 function setup() {
@@ -27,6 +27,7 @@ function setup() {
 
 function draw() {
 
+  
   nyu.display()
   nyu.checkHoover(mouseX, mouseY)
   disney.display()
