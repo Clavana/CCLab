@@ -33,6 +33,15 @@ body {
   font-family: "Nunito Sans", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: coral;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: purple;
+}
 
 .wrapper {
   max-width: 800px;
@@ -41,7 +50,7 @@ body {
 
 .title-container {
   /* background-color: aqua; */
-  height: 100px;
+  height: 200px;
   text-align: center;
 
   display: flex;
@@ -51,7 +60,7 @@ body {
 
 .title-box {
   /* background-color: chartreuse; */
-  width: 500px;
+  width: 900px;
 }
 
 .nav-container {
@@ -70,6 +79,11 @@ body {
 }
 
 
+canvas,
+img {
+  border-radius: 20px;
+}
+
 .nav-menu {
   margin: 0 30px;
 }
@@ -81,11 +95,11 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
-  align-content: center
+  align-content: center;
 }
 
 .box {
-  background-color: #EEE;
+  /* background-color: #EEE; */
   text-align: center;
   margin: 10px;
   width: 170px;

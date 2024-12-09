@@ -3,7 +3,7 @@ let sizeW, sizeH;
 let buttons = [];
 
 function preload() {
-  img = loadImage('assets/mapLarge.png');
+  img = loadImage('assets/disney.png');
 }
 
 function setup() {
@@ -15,13 +15,8 @@ function setup() {
   nyu = new CircleButton(sizeW*0.44, sizeH*0.63, "nyush", "NYU Shanghai")
   disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disney World")
   pearlTower = new CircleButton(sizeW*0.49, sizeH*0.12, "pearlTower", "Pearl Tower")
-  chocolateMuseum = new CircleButton(sizeW*0.465, sizeH*0.19, "chocolateMuseum", "Chocolate Museum")
-  taikooli = new CircleButton(sizeW*0.438, sizeH*0.61, "taikooli", "Taikooli")
-  theBund = new CircleButton(sizeW*0.46, sizeH*0.129, "theBund", "The Bund")
-  yuGarden = new CircleButton(sizeW*0.46, sizeH*0.2, "yuGarden", "Yu Garden")
-  jingan = new CircleButton(sizeW*0.33, sizeH*0.2, "jingan", "Jing'an Temple")
 
-  buttons = [nyu, disney, pearlTower, chocolateMuseum, taikooli, theBund, yuGarden, jingan];
+  buttons = [nyu, disney, pearlTower];
 }
 
 function draw() {

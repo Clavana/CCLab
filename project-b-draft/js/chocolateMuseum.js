@@ -1,9 +1,8 @@
-let img;
 let sizeW, sizeH;
 let buttons = [];
 
 function preload() {
-  img = loadImage('assets/mapLarge.png');
+  img = loadImage('assets/chocolateMuseum.png');
 }
 
 function setup() {
@@ -12,16 +11,10 @@ function setup() {
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  nyu = new CircleButton(sizeW*0.44, sizeH*0.63, "nyush", "NYU Shanghai")
-  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disney World")
-  pearlTower = new CircleButton(sizeW*0.49, sizeH*0.12, "pearlTower", "Pearl Tower")
-  chocolateMuseum = new CircleButton(sizeW*0.465, sizeH*0.19, "chocolateMuseum", "Chocolate Museum")
-  taikooli = new CircleButton(sizeW*0.438, sizeH*0.61, "taikooli", "Taikooli")
-  theBund = new CircleButton(sizeW*0.46, sizeH*0.129, "theBund", "The Bund")
-  yuGarden = new CircleButton(sizeW*0.46, sizeH*0.2, "yuGarden", "Yu Garden")
-  jingan = new CircleButton(sizeW*0.33, sizeH*0.2, "jingan", "Jing'an Temple")
+  nyu = new CircleButton(sizeW*0.44, sizeH*0.63, "nyush")
+  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney")
 
-  buttons = [nyu, disney, pearlTower, chocolateMuseum, taikooli, theBund, yuGarden, jingan];
+  buttons = [nyu, disney];
 }
 
 function draw() {
@@ -54,10 +47,9 @@ function draw() {
 }
 
 class CircleButton {
-  constructor(startX, startY, name, displayName) {
+  constructor(startX, startY, name) {
     this.name = name;
     this.x = startX;
-    this.displayName = displayName;
     this.y = startY;
     this.dia = 20
     this.hoover = false
@@ -70,7 +62,7 @@ class CircleButton {
         let url = this.name + ".html";
         window.open(url, "_self");
       }
-      return this.displayName;
+      return this.name;
     } else {
       this.hoover = false;
       return "";
