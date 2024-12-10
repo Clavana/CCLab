@@ -3,7 +3,7 @@ let sizeW, sizeH;
 let buttons = [];
 
 function preload() {
-  img = loadImage('assets/yuGarden.png');
+  img = loadImage('assets/yuGarden.jpg');
 }
 
 function setup() {

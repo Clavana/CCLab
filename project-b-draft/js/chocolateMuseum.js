@@ -11,8 +11,8 @@ function setup() {
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  nyu = new CircleButton(sizeW*0.44, sizeH*0.63, "nyush")
-  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney")
+  nyu = new CircleButton(sizeW*0.44, sizeH*0.63, "nyush", "NYU Shanghai")
+  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disney World")
 
   buttons = [nyu, disney];
 }
@@ -47,9 +47,10 @@ function draw() {
 }
 
 class CircleButton {
-  constructor(startX, startY, name) {
+  constructor(startX, startY, name, displayName) {
     this.name = name;
     this.x = startX;
+    this.displayName = displayName;
     this.y = startY;
     this.dia = 20
     this.hoover = false
@@ -62,7 +63,7 @@ class CircleButton {
         let url = this.name + ".html";
         window.open(url, "_self");
       }
-      return this.name;
+      return this.displayName;
     } else {
       this.hoover = false;
       return "";

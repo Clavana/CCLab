@@ -63,9 +63,17 @@ a:hover {
   width: 900px;
 }
 
+.title-box h2 {
+  /* background-color: chartreuse; */
+  font-size: 21px;
+  margin-top: 12px;
+}
+
 .nav-container {
   /* background-color: bisque; */
   height: 50px;
+  margin-top: 8px;
+  font-size: 21px;
 
   display: flex;
   justify-content: center;
@@ -132,4 +140,33 @@ img {
   background-color: chocolate;
   /* visibility: hidden; */
   /* display: none; */
+}
+
+.scroll-body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+}
+
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 10px;
+  padding: 20px;
+  width: 90%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.scroll-box {
+  /* prevent this box from shrinking or growing from flex container.*/
+  flex: 0 0 auto;
+  width: 400px;
+  height: 400px;
+  background-color: gray;
 }
