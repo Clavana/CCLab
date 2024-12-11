@@ -13,7 +13,7 @@ function setup() {
   canvas.parent("p5-canvas-container");
 
   nyu = new CircleButton(sizeW*0.44, sizeH*0.63, "nyush", "NYU Shanghai")
-  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disney World")
+  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disneyland")
   pearlTower = new CircleButton(sizeW*0.49, sizeH*0.12, "pearlTower", "Pearl Tower")
   chocolateMuseum = new CircleButton(sizeW*0.465, sizeH*0.19, "chocolateMuseum", "Chocolate Museum")
   taikooli = new CircleButton(sizeW*0.438, sizeH*0.61, "taikooli", "Taikooli")

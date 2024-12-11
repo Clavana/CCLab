@@ -1,21 +1,22 @@
 let img;
 let sizeW, sizeH;
 let buttons = [];
+let currentAudio = null; 
 
 function preload() {
   img = loadImage('assets/nyush.png');
 }
 
 function setup() {
-  sizeW = windowWidth*3/4;
-  sizeH = windowHeight*3/4;
+  sizeW = windowWidth*2;
+  sizeH = windowHeight;
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  nyu = new CircleButton(sizeW*0.44, sizeH*0.63, "nyush", "NYU Shanghai")
-  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disney World")
-
-  buttons = [nyu, disney];
+  triviaOne = new CircleButton(sizeW * 0.4, sizeH * 0.36, "", "Did you know NYU Shanghai's New Bund Campus opened in 2023, offering state-of-the-art facilities in the vibrant Qiantan neighborhood?");
+  triviaTwo = new CircleButton(sizeW * 0.69, sizeH * 0.42, "assets/musicNYUSH.mp3", "Each May, the Oriental Pearl Tower lights up in violet to honor NYU Shanghai's graduating class, accompanied by celebratory music!");
+  
+  buttons = [triviaOne, triviaTwo];
 }
 
 function draw() {
@@ -38,11 +39,11 @@ function draw() {
   
   push();
   translate(mouseX, mouseY)
-  textSize(30);
+  textSize(15);
   fill(255, 100, 100);
   stroke(255)
   strokeWeight(8)
-  text(selectedName, -70, 0);
+  text(selectedName, -100, 0);
   pop();
 
 }
@@ -61,8 +62,16 @@ class CircleButton {
     if (dist(this.x, this.y, userMouseX, userMouseY) < this.dia/2) {
       this.hoover = true;
       if (mouseIsPressed) {
-        let url = this.name + ".html";
-        window.open(url, "_self");
+        if (this.name !== "") {
+          if (currentAudio && !currentAudio.ended) {
+            return;
+          }
+          currentAudio = new Audio(this.name);
+          currentAudio.play();
+          currentAudio.addEventListener("ended", () => {
+            currentAudio = null;
+          });
+        }
       }
       return this.displayName;
     } else {
@@ -75,6 +84,9 @@ class CircleButton {
     push();
     if (!this.hoover) {
       fill(255, 255, 0);
+      if (this.name !== "") {
+        fill(0, 0, 255);
+      }
       circle(this.x, this.y, this.dia);
     } else {
       fill(255,100,100);

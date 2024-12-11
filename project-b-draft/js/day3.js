@@ -12,7 +12,7 @@ function setup() {
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disney World")
+  disney = new CircleButton(sizeW*0.9, sizeH*0.66, "disney", "Disneyland")
 
   buttons = [disney];
 }
