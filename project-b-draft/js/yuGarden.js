@@ -5,11 +5,12 @@ let currentAudio = null;
 
 function preload() {
   img = loadImage('assets/yuGarden.jpg');
+  k = img.height / img.width;
 }
 
 function setup() {
   sizeW = windowWidth*2;
-  sizeH = windowHeight;
+  sizeH = sizeW * k;
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 

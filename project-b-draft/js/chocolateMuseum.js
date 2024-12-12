@@ -1,15 +1,17 @@
 let img;
 let sizeW, sizeH;
 let buttons = [];
-let currentAudio = null; 
+let currentAudio = null;
+let k = 1; 
 
 function preload() {
   img = loadImage('assets/chocolateMuseum.png');
+  k = img.height / img.width;
 }
 
 function setup() {
   sizeW = windowWidth*2;
-  sizeH = windowHeight;
+  sizeH = sizeW * k;
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
