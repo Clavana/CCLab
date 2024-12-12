@@ -14,8 +14,8 @@ function setup() {
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  triviaOne = new CircleButton(sizeW * 0.4, sizeH * 0.36, "", "Did you know The Bund in Shanghai is over 150 years old and was once known as the 'Wall Street of the East'?");
-  triviaTwo = new CircleButton(sizeW * 0.69, sizeH * 0.42, "assets/musicTheBund.mp3", "The Bund's nightly light show, with music playing in the background, is a mesmerizing blend of history and modernity!");
+  triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Did you know The Bund in Shanghai is over 150 years old and was once known as the 'Wall Street of the East'?");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicTheBund.mp3", "The Bund's nightly light show, with music playing in the background, is a mesmerizing blend of history and modernity!");
   
   buttons = [triviaOne, triviaTwo];  
 }

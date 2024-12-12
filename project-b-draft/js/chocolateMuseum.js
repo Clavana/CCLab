@@ -15,8 +15,8 @@ function setup() {
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  triviaOne = new CircleButton(sizeW * 0.4, sizeH * 0.36, "", "Did you know you can enter the Museum of Chocolate for free?");
-  triviaTwo = new CircleButton(sizeW * 0.69, sizeH * 0.42, "assets/musicChocolateMuseum.mp3", "The Museum of Chocolate in Shanghai offers interactive exhibits with chocolate-themed music to enhance your visit!");
+  triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Did you know you can enter the Museum of Chocolate for free?");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicChocolateMuseum.mp3", "The Museum of Chocolate in Shanghai offers interactive exhibits with chocolate-themed music to enhance your visit!");
   
   buttons = [triviaOne, triviaTwo];  
 }

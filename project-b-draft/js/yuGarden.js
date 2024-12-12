@@ -14,8 +14,8 @@ function setup() {
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  triviaOne = new CircleButton(sizeW * 0.4, sizeH * 0.36, "", "Yu Garden, dating back to the Ming Dynasty, offers a serene escape with its classical Chinese architecture and tranquil ponds.");
-  triviaTwo = new CircleButton(sizeW * 0.69, sizeH * 0.42, "assets/musicYuGarden.mp3", "During festivals, traditional Chinese music performances are held in Yu Garden, enhancing its cultural ambiance.");
+  triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Yu Garden, dating back to the Ming Dynasty, offers a serene escape with its classical Chinese architecture and tranquil ponds.");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicYuGarden.mp3", "During festivals, traditional Chinese music performances are held in Yu Garden, enhancing its cultural ambiance.");
   
   buttons = [triviaOne, triviaTwo];  
 }

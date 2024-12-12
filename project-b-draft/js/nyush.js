@@ -14,8 +14,8 @@ function setup() {
   let canvas = createCanvas(sizeW, sizeH);
   canvas.parent("p5-canvas-container");
 
-  triviaOne = new CircleButton(sizeW * 0.4, sizeH * 0.36, "", "Did you know NYU Shanghai's New Bund Campus opened in 2023, offering state-of-the-art facilities in the vibrant Qiantan neighborhood?");
-  triviaTwo = new CircleButton(sizeW * 0.69, sizeH * 0.42, "assets/musicNYUSH.mp3", "Each May, the Oriental Pearl Tower lights up in violet to honor NYU Shanghai's graduating class, accompanied by celebratory music!");
+  triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Did you know NYU Shanghai's New Bund Campus opened in 2023, offering state-of-the-art facilities in the vibrant Qiantan neighborhood?");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicNYUSH.mp3", "Each May, the Oriental Pearl Tower lights up in violet to honor NYU Shanghai's graduating class, accompanied by celebratory music!");
   
   buttons = [triviaOne, triviaTwo];
 }
