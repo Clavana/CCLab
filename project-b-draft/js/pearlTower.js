@@ -15,7 +15,7 @@ function setup() {
   canvas.parent("p5-canvas-container");
 
   triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Standing at 468 meters, the Oriental Pearl Tower was the tallest structure in China until 2007 and remains a symbol of Shanghai's skyline.");
-  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicPearlTower.mp3", "The tower's nightly light show is synchronized with music, creating a mesmerizing spectacle over the Huangpu River.");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicPearlTower.wav", "The tower's nightly light show is synchronized with music, creating a mesmerizing spectacle over the Huangpu River.");
   
   buttons = [triviaOne, triviaTwo];
 }

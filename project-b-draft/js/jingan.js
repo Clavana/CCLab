@@ -16,7 +16,7 @@ function setup() {
   canvas.parent("p5-canvas-container");
 
   triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Did you know Jing'an Temple was originally built over 780 years ago during the Three Kingdoms period?");
-  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicJingan.mp3", "Jing'an Temple hosts traditional Buddhist ceremonies accompanied by serene music—it’s a tranquil escape in the heart of Shanghai!");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicJingan.wav", "Jing'an Temple hosts traditional Buddhist ceremonies accompanied by serene music—it’s a tranquil escape in the heart of Shanghai!");
   
   buttons = [triviaOne, triviaTwo];  
 }

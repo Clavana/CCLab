@@ -16,7 +16,7 @@ function setup() {
   canvas.parent("p5-canvas-container");
 
   triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Did you know you can enter the Museum of Chocolate for free?");
-  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicChocolateMuseum.mp3", "The Museum of Chocolate in Shanghai offers interactive exhibits with chocolate-themed music to enhance your visit!");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicChocolateMuseum.wav", "The Museum of Chocolate in Shanghai offers interactive exhibits with chocolate-themed music to enhance your visit!");
   
   buttons = [triviaOne, triviaTwo];  
 }

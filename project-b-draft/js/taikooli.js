@@ -15,7 +15,7 @@ function setup() {
   canvas.parent("p5-canvas-container");
 
   triviaOne = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "", "Taikoo Li Qiantan, near NYU Shanghai, features a rooftop running track and a blend of international retail and dining options.");
-  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicTaikooli.mp3", "The mall hosts live music events, creating a vibrant atmosphere for shoppers and visitors alike.");
+  triviaTwo = new CircleButton(sizeW * random(0.2, 0.8), sizeH * random(0.2, 0.8), "assets/musicTaikooli.wav", "The mall hosts live music events, creating a vibrant atmosphere for shoppers and visitors alike.");
   
   buttons = [triviaOne, triviaTwo];  
 }
