@@ -170,5 +170,4 @@ img {
   /* prevent this box from shrinking or growing from flex container.*/
   flex: 0 0 auto;
   width: 200%;
-  background-color: gray;
 }
